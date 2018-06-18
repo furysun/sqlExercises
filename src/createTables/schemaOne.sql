@@ -7,6 +7,7 @@ CREATE TABLE SALESMAN (
   NAME        varchar(30),
   CITY        varchar(15),
   COMMISSION  decimal(5, 2),
+
   PRIMARY KEY (SALESMAN_ID)
 );
 
