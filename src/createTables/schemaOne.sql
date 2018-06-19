@@ -25,8 +25,8 @@ CREATE TABLE ORDERS (
   ORD_NO      numeric(5),
   PURCH_AMT   decimal(8, 2),
   ORD_DATE    date,
-  SALESMAN_ID numeric(5),
   CUSTOMER_ID numeric(5),
+  SALESMAN_ID numeric(5),
 
   PRIMARY KEY (ORD_NO),
 
