@@ -9,7 +9,6 @@ FROM salesman;
 SELECT * FROM orders
 ORDER BY ord_no, purch_amt, ord_date, customer_id, salesman_id;
 
-
 SELECT ord_no, ord_date, purch_amt
 FROM orders
 WHERE salesman_id=5001;
@@ -59,3 +58,13 @@ WHERE (subject ='Economics' AND year=1971);
 SELECT * FROM nobel_win
 WHERE year=1970
 AND subject NOT IN('Physiology','Economics');
+
+SELECT * FROM nobel_win
+WHERE (subject ='Physiology' AND year<1971)
+UNION
+SELECT * FROM nobel_win
+WHERE (subject ='Peace' AND year>=1974);
+
+SELECT * FROM nobel_win
+WHERE  winner = 'Johannes Georg Bednorz';
+-- 23
